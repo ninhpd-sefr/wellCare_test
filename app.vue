@@ -3,14 +3,14 @@
     <Header />
   </div>
   <div class="relative">
-    <div v-if="showAlert" class="alertSucess">
+    <div v-if="showAlert" class="alertSucess" id="success">
       <v-alert type="success" title="Success " variant="outlined">
         Copy to clipboard !!!
       </v-alert>
     </div>
   </div>
 
-  <div v-if="showAlertClear" class="alertSucess">
+  <div v-if="showAlertClear" class="alertSucess" id="clear">
     <v-alert type="info" title="Clear input " variant="outlined">
       Clear input , type again !!!
     </v-alert>
@@ -18,6 +18,7 @@
   <div class="clipboard">
     <div class="input-container pa-xs-0 clear-mobile">
       <v-textarea
+        id="input-desktop"
         placeholder="Hello ..."
         v-model="text"
         variant="solo"

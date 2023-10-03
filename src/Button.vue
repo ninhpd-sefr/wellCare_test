@@ -1,5 +1,10 @@
 <template>
-  <v-btn class="mr-2" variant="outlined" @click="callFunctionCopy">
+  <v-btn
+    :id="generateId(title)"
+    class="mr-2"
+    variant="outlined"
+    @click="callFunctionCopy"
+  >
     {{ title }}
   </v-btn>
 </template>
@@ -12,6 +17,11 @@ const props = defineProps({
 
 const callFunctionCopy = () => {
   props.handleFunction();
+};
+
+const generateId = (title) => {
+  // Sử dụng title để tạo id
+  return `button-${title.replace(/\s+/g, "-").toLowerCase()}`;
 };
 </script>
 
