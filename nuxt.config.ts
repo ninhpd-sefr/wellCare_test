@@ -1,4 +1,5 @@
 export default {
+  ssr: false,
   vue: {
     config: {
       devtools: true,
@@ -15,13 +16,14 @@ export default {
     "@mdi/font/css/materialdesignicons.min.css",
   ],
   build: {
+    outDir: "dist",
     transpile: ["vuetify"],
-    rollupOptions: {
-      external: [
-        // Other external dependencies
-        // "@capacitor/nuxt",
-      ],
-    },
+    // rollupOptions: {
+    //   external: [
+    //     // Other external dependencies
+    //     // "@capacitor/nuxt",
+    //   ],
+    // },
   },
   // plugins: [{ src: "@capacitor/nuxt" }],
 };
