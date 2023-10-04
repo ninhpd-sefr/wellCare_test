@@ -1,0 +1,7 @@
+{
+  "name": "nuxtclipboard",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}

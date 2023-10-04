@@ -51,6 +51,8 @@
 
 <script setup>
 import { ref } from "vue";
+import { Clipboard } from "@capacitor/clipboard";
+
 import Header from "./src/Header.vue";
 import Button from "./src/Button.vue";
 
@@ -65,7 +67,14 @@ function handleCopyToClipBoard() {
     showAlert.value = false;
   }, 1000);
   navigator.clipboard.writeText(text.value);
+  writeToClipboard();
 }
+
+const writeToClipboard = async () => {
+  await Clipboard.write({
+    string: text.value,
+  });
+};
 
 function handleCopyClear() {
   showAlertClear.value = true;

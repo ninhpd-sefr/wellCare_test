@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxtclipboard",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run start"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.12.1",
@@ -18,12 +20,17 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@capacitor/android": "^5.4.1",
-    "@capacitor/cli": "^5.4.1",
-    "@capacitor/core": "^5.4.1",
-    "@capacitor/ios": "^5.4.1",
+    "@capacitor/android": "5.4.1",
+    "@capacitor/app": "5.0.6",
+    "@capacitor/cli": "5.4.1",
+    "@capacitor/clipboard": "^5.0.6",
+    "@capacitor/core": "5.4.1",
+    "@capacitor/haptics": "5.0.6",
+    "@capacitor/keyboard": "5.0.6",
+    "@capacitor/status-bar": "5.0.6",
     "@mdi/font": "^7.2.96",
     "sass": "^1.68.0",
     "vuetify": "^3.3.19"
-  }
+  },
+  "version": "0.0.0"
 }

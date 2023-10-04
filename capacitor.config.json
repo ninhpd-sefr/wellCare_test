@@ -1,7 +1,8 @@
 {
-  "appId": "com.example.app",
-  "appName": "copy-clipboard",
-  "webDir": "www",
+  "appId": "com.ninh.nuxt.app",
+  "appName": "nuxtclipboard",
+  "webDir": ".output/public",
+  "bundledWebRuntime": false,
   "server": {
     "androidScheme": "https"
   }

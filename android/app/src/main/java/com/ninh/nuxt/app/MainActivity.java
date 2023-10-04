@@ -1,4 +1,4 @@
-package com.example.app;
+package com.ninh.nuxt.app;
 
 import com.getcapacitor.BridgeActivity;
 
